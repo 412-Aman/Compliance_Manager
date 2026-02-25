@@ -1,4 +1,4 @@
-# Now about this project:
+# About this project:
 ## What It Does
 
 - **Auto-approves 85-95%** of legitimate withdrawals in <2 seconds
