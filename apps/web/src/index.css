@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+:root {
+    --bg: #050505;
+    --bg-elevated: #0b0b0b;
+    --bg-panel: #0f0f12;
+
+    /* Gold Theme */
+    --primary: #926F34;
+    --primary-light: #B8944D;
+    --accent: #1a1a1a;
+
+    --text: #f4f4f5;
+    --text-dim: #a1a1aa;
+    --text-muted: #52525b;
+
+    --border: rgba(255, 255, 255, 0.08);
+
+    --success: #22c55e;
+    --warning: #eab308;
+    --danger: #ef4444;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, system-ui, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Layout helpers */
+.page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Cards */
+.card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+/* Tags */
+.tag {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    border-radius: 9999px;
+    border: 1px solid var(--border);
+    text-transform: uppercase;
+}
+
+.tag-danger {
+    color: var(--danger);
+    border-color: rgba(239, 68, 68, 0.3);
+}
+
+.tag-warning {
+    color: var(--warning);
+    border-color: rgba(234, 179, 8, 0.3);
+}
+
+.tag-success {
+    color: var(--success);
+    border-color: rgba(34, 197, 94, 0.3);
+}
+
+.tag-info {
+    color: var(--primary);
+    border-color: rgba(146, 111, 52, 0.3);
+}
+
+/* Inputs */
+.input {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 0.75rem 1rem;
+    color: var(--text);
+    width: 100%;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-muted);
+}
+
+/* Gradient text - Gold theme with shimmer */
+.gradient-text {
+    background: linear-gradient(135deg,
+            #926F34 0%,
+            #D4AF37 25%,
+            #FFD700 50%,
+            #D4AF37 75%,
+            #926F34 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Animations */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+.animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,125 @@
+AI Compliance Manager 
+The Challenge 
+How might we build an AI compliance manager that continuously monitors 
+customer behaviour patterns, automatically detects activities inconsistent with 
+their declared profile, and stays current with evolving regulatory requirements? 
+The Problem 
+Compliance teams are drowning in data. Thousands of customers transact daily, but only a 
+handful exhibit truly suspicious behaviour. Manual monitoring catches obvious cases too late, 
+misses subtle patterns, and generates false positives that waste analyst time. 
+"We know regulators expect us to spot transactions inconsistent with customer profiles. 
+But how do I review 10,000 accounts for behavioural anomalies? I can't." 
+"A customer's behaviour changes dramatically overnight - deposit patterns, transaction 
+sizes, frequency. By the time we notice manually, weeks have passed." 
+"We set rigid rules: flag deposits over $10,000. Great - now I have 500 alerts per day, 
+95% are false positives, and the real criminals slip through with $9,999 deposits." 
+"Different analysts interpret 'suspicious' differently. What one person flags, another 
+approves. We need consistency." 
+And then there's the regulatory landscape: 
+"A new FATF recommendation dropped last month. I still don't know how it affects our 
+monitoring rules." 
+"We operate in 15 jurisdictions. Each has different requirements. Keeping track of what 
+changed where is a full-time job." 
+"The regulator updated their guidance on crypto transactions. By the time legal 
+translated it into policy changes, we were already three months behind." 
+"I found out about a regulatory change from a competitor's press release. That's not how 
+compliance should work." 
+The core issue: human-scale monitoring can't match machine-scale activity, and the regulatory 
+landscape changes faster than teams can adapt. Sophisticated risks hide in volume, reactive 
+compliance is always too late, and regulatory changes create blind spots. 
+Why This Matters Now 
+Financial regulators globally require institutions to identify unusual customer behaviour, but they 
+don't prescribe exactly how. Modern financial crime is sophisticated: 
+● Criminals know common thresholds and stay just below them 
+● Behaviour patterns are more telling than single transactions 
+● Context matters: what's normal for one customer is suspicious for another 
+● Early detection prevents losses and regulatory breaches 
+Meanwhile, the regulatory environment is constantly evolving: 
+● New AML/CFT requirements emerge from FATF, regional bodies, and local regulators 
+● Guidance on emerging risks (crypto, digital payments, AI-enabled fraud) updates 
+frequently 
+● Enforcement actions against other firms signal changing regulatory expectations 
+● Operating across multiple jurisdictions multiplies the complexity 
+Compliance teams need AI that thinks like an experienced analyst but operates at machine 
+scale - spotting patterns humans miss, learning from feedback, explaining its reasoning, and 
+staying current with regulatory changes that could affect monitoring rules. 
+The Opportunity 
+Build an AI-powered compliance manager that: 
+Behavioural Monitoring: 
+● Behavioural profiling: Learns what's "normal" for each customer based on their profile 
+(income, employment, location) and historical behaviour 
+● Anomaly detection: Flags deviations from established patterns - sudden spikes in 
+activity, unusual transaction sizes, geographic inconsistencies 
+● Contextual intelligence: Considers multiple signals together rather than evaluating 
+transactions in isolation 
+● Risk scoring: Assigns confidence scores to anomalies to prioritise analyst attention 
+● Adaptive learning: Improves detection accuracy based on analyst feedback (true vs. 
+false positives) 
+Regulatory Intelligence: 
+● Regulatory monitoring: Tracks changes from relevant regulators, standard-setters 
+(FATF), and enforcement bodies across all operating jurisdictions 
+● Impact analysis: Automatically assesses how regulatory changes affect current 
+monitoring rules and customer populations 
+● Gap identification: Highlights where current processes may not meet new or updated 
+requirements 
+● Policy recommendations: Suggest specific changes to thresholds, rules, or procedures 
+based on regulatory updates 
+● Compliance calendar: Tracks implementation deadlines and provides proactive alerts 
+Operational Integration: 
+● Automated workflows: Triggers appropriate responses based on risk level (alert analyst, 
+request additional verification, apply temporary restrictions) 
+● Audit trail: Documents all detections, decisions, and reasoning for regulatory inspection 
+● Regulatory reporting: Helps prepare required reports and filings with pre-populated data 
+The system should reduce false positives by 80% while catching 95%+ of genuine compliance 
+risks, explain its reasoning clearly, and ensure the team is never caught off-guard by regulatory 
+changes. 
+Constraints 
+Constraint 
+Rationale 
+Must demo live 
+AI must add value 
+Explainable decisions 
+Minimise false positives 
+Handle diverse profiles 
+No slide decks. Show us working software. 
+This is an AI hackathon. GenAI must be core to your solution. 
+Compliance officers and regulators need to understand why 
+something was flagged. 
+Alert fatigue reduces effectiveness and frustrates legitimate 
+customers. 
+From high-net-worth professionals to students with part-time 
+jobs. 
+Questions Worth Considering 
+On behavioural monitoring: 
+● How do you define "normal" for a customer with only 2 weeks of history? 
+● What's the right balance between being too sensitive (many false alarms) vs. too lenient 
+(missing real risks)? 
+● How do you weigh different signals - is a geographic anomaly more suspicious than a 
+transaction size anomaly? 
+● How do you handle legitimate life changes (job promotion, inheritance) vs. suspicious 
+behaviour? 
+On regulatory intelligence: 
+● How do you determine which regulatory changes are relevant to Deriv's operations? 
+● Can AI accurately interpret regulatory language and translate it into monitoring rule 
+changes? 
+● How do you prioritise regulatory changes - some are urgent, others have long 
+implementation timelines? 
+● How do you handle conflicting requirements across different jurisdictions? 
+● Can the system predict regulatory trends based on enforcement patterns and 
+consultation papers? 
+What Would Blow Our Minds 
+● Unsupervised learning that discovers entirely new risk patterns not defined in rules 
+● Temporal intelligence: "This behaviour was fine last month, but given their recent activity 
+changes, it's now suspicious" 
+● Network effects: "This customer's behaviour matches a fraud ring we detected in 3 other 
+accounts" 
+● Predictive flagging: Early warning signals before compliance breaches occur 
+● Natural language explanations: "Flagged because: deposits increased 400% while 
+declared income remained unchanged, similar to 12 confirmed money laundering cases" 
+● Regulatory radar: "New FATF guidance on virtual assets published yesterday - here's 
+how it affects 3 of your current monitoring rules" 
+● Impact simulation: "This regulatory change will increase alerts by 15% in the Malta 
+jurisdiction - here's a recommended threshold adjustment" 
+● Compliance gap alerts: "Based on recent FCA enforcement actions, your current 
+approach to transaction monitoring may be below emerging expectations" 
+● Something that ensures we're never surprised by a regulatory change again

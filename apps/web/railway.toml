@@ -1,0 +1,22 @@
+# Nixpacks configuration for Railway Frontend
+# Handles build and serves the React app
+
+[phases.setup]
+nixPkgs = ["nodejs_20", "nodePackages.npm"]
+
+[phases.install]
+cmds = ["npm install"]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[start]
+cmd = "npx serve -s dist -p $PORT"
+
+[variables]
+# Frontend environment variables
+NODE_ENV = "production"
+# These should be set in the Railway UI as well for security, 
+# but they are defined here for the build phase.
+VITE_API_URL = "https://compliance-manager-production-e36c.up.railway.app/api/v1"
+VITE_WS_URL = "wss://compliance-manager-production-e36c.up.railway.app/ws"
