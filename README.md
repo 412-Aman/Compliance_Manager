@@ -1,12 +1,3 @@
-#This Is Our Main Project For Deriv:
-
-# AI Payments Fraud Detection System
-
-[![GitHub](https://img.shields.io/badge/GitHub-AI_PAYMENT_PROCESS-blue?logo=github)](https://github.com/bhargavramgajula007/AI_PAYMENT_PROCESS)
-
-# Real-time payout approval system with explainable AI and fraud ring detection for trading platforms and fintech.
-# Check it out
-
 ---
 # Now about this project:
 ## What It Does
