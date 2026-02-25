@@ -1,4 +1,3 @@
----
 # Now about this project:
 ## What It Does
 
@@ -6,8 +5,6 @@
 - **Detects fraud rings** via graph analysis of shared devices/IPs/payment methods
 - **Explains every decision** with structured evidence and AI-generated rationales
 - **Learns from feedback** to reduce false positives over time
-
----
 
 ## Core Features
 
